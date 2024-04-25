@@ -27,7 +27,7 @@
 *.lib
 
 # Executables
-./scr/vsptk
+src/vsptk
 *.exe
 *.out
 *.app
