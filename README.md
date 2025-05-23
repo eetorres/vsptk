@@ -1,2 +1,2 @@
 # vsptk
-A CLI manipulator of POSCAR files for VASP calcualtions
+A CLI manipulator of POSCAR files for VASP calculations
