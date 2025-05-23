@@ -79,6 +79,7 @@ public:
     uint GetAtomIndex(std::string s);
     //
     void StrainCell(double s, int i); // Working here
+    void ScaleLattice(double s); // Working here
     // DEPRECATED: This function will be removed in a future release
     void DeleteAtom(uint u);
     //

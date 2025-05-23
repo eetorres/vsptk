@@ -567,7 +567,12 @@ bool CVasp::SaveFile(std::string d, std::string f, std::vector<glm::dvec3>& xyz,
 void CVasp::StrainCell(double s, int i) // Working here
 {
     cell_xyz[i]*=s;
-};
+}
+
+void CVasp::ScaleLattice(double s) // Working here
+{
+    parameter*=s;
+}
 
 uint CVasp::GetAtomIndex(std::string s)
 {

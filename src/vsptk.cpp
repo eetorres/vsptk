@@ -57,12 +57,21 @@ int main(int argc, char **argv){
   // Apply strain in Z
   const std::string &strainz = input.getCmdOption("-sz");
   if (!strainz.empty()){
-    std::cout<<"strain in Z = "<<strainx<<std::endl;
+    std::cout<<"strain in Z = "<<strainz<<std::endl;
     md->vasp.is_dynamics=false;
     md->vasp.StrainCell(std::stod(strainz),2);
     //md->SaveStructureFile("./","./POSCAR-RES",INPUT_FILE_TYPE_VSP);
   }
-  
+
+  // Apply scalling factor to the lattice parameter
+  const std::string &scalel = input.getCmdOption("-sl");
+  if (!scalel.empty()){
+    std::cout<<"Scale lattice = "<<scalel<<std::endl;
+    md->vasp.is_dynamics=false;
+    md->vasp.ScaleLattice(std::stod(scalel));
+    //md->SaveStructureFile("./","./POSCAR-RES",INPUT_FILE_TYPE_VSP);
+  }
+
   md->SaveStructureFile("./","./POSCAR-VTK",INPUT_FILE_TYPE_VSP);
 
   return 0;
