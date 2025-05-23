@@ -152,8 +152,8 @@ am__define_uniq_tagged_files = \
     if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
   done | $(am__uniquify_input)`
 DIST_SUBDIRS = $(SUBDIRS)
-am__DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/config.h.in compile \
-	depcomp install-sh missing
+am__DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/config.h.in \
+	README.md compile depcomp install-sh missing
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
@@ -198,13 +198,13 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} '/opt/src/MD/vsptk/missing' aclocal-1.16
+ACLOCAL = ${SHELL} '/opt/cnlwork/Source/MD/vsptk/missing' aclocal-1.16
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AUTOCONF = ${SHELL} '/opt/src/MD/vsptk/missing' autoconf
-AUTOHEADER = ${SHELL} '/opt/src/MD/vsptk/missing' autoheader
-AUTOMAKE = ${SHELL} '/opt/src/MD/vsptk/missing' automake-1.16
-AWK = gawk
+AUTOCONF = ${SHELL} '/opt/cnlwork/Source/MD/vsptk/missing' autoconf
+AUTOHEADER = ${SHELL} '/opt/cnlwork/Source/MD/vsptk/missing' autoheader
+AUTOMAKE = ${SHELL} '/opt/cnlwork/Source/MD/vsptk/missing' automake-1.16
+AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
@@ -231,7 +231,7 @@ LDFLAGS =
 LIBOBJS = 
 LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} '/opt/src/MD/vsptk/missing' makeinfo
+MAKEINFO = ${SHELL} '/opt/cnlwork/Source/MD/vsptk/missing' makeinfo
 MKDIR_P = /usr/bin/mkdir -p
 OBJEXT = o
 PACKAGE = vsptk
@@ -246,10 +246,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = 
 VERSION = 1.0
-abs_builddir = /opt/src/MD/vsptk
-abs_srcdir = /opt/src/MD/vsptk
-abs_top_builddir = /opt/src/MD/vsptk
-abs_top_srcdir = /opt/src/MD/vsptk
+abs_builddir = /opt/cnlwork/Source/MD/vsptk
+abs_srcdir = /opt/cnlwork/Source/MD/vsptk
+abs_top_builddir = /opt/cnlwork/Source/MD/vsptk
+abs_top_srcdir = /opt/cnlwork/Source/MD/vsptk
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 am__include = include
@@ -269,7 +269,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /opt/src/MD/vsptk/install-sh
+install_sh = ${SHELL} /opt/cnlwork/Source/MD/vsptk/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale

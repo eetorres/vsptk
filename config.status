@@ -430,11 +430,11 @@ Copyright (C) 2021 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/opt/src/MD/vsptk'
+ac_pwd='/opt/cnlwork/Source/MD/vsptk'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/usr/bin/mkdir -p'
-AWK='gawk'
+AWK='mawk'
 test -n "$AWK" || AWK=awk
 # The default lists apply if the user does not specify any file.
 ac_need_defaults=:
@@ -646,17 +646,17 @@ S["am__tar"]="$${TAR-tar} chof - \"$$tardir\""
 S["AMTAR"]="$${TAR-tar}"
 S["am__leading_dot"]="."
 S["SET_MAKE"]=""
-S["AWK"]="gawk"
+S["AWK"]="mawk"
 S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/usr/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
-S["install_sh"]="${SHELL} /opt/src/MD/vsptk/install-sh"
-S["MAKEINFO"]="${SHELL} '/opt/src/MD/vsptk/missing' makeinfo"
-S["AUTOHEADER"]="${SHELL} '/opt/src/MD/vsptk/missing' autoheader"
-S["AUTOMAKE"]="${SHELL} '/opt/src/MD/vsptk/missing' automake-1.16"
-S["AUTOCONF"]="${SHELL} '/opt/src/MD/vsptk/missing' autoconf"
-S["ACLOCAL"]="${SHELL} '/opt/src/MD/vsptk/missing' aclocal-1.16"
+S["install_sh"]="${SHELL} /opt/cnlwork/Source/MD/vsptk/install-sh"
+S["MAKEINFO"]="${SHELL} '/opt/cnlwork/Source/MD/vsptk/missing' makeinfo"
+S["AUTOHEADER"]="${SHELL} '/opt/cnlwork/Source/MD/vsptk/missing' autoheader"
+S["AUTOMAKE"]="${SHELL} '/opt/cnlwork/Source/MD/vsptk/missing' automake-1.16"
+S["AUTOCONF"]="${SHELL} '/opt/cnlwork/Source/MD/vsptk/missing' autoconf"
+S["ACLOCAL"]="${SHELL} '/opt/cnlwork/Source/MD/vsptk/missing' aclocal-1.16"
 S["VERSION"]="1.0"
 S["PACKAGE"]="vsptk"
 S["CYGPATH_W"]="echo"
