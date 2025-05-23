@@ -610,7 +610,7 @@ void CModel::SetNeighbourList(void)
     }
 }
 
-// Depredated Sun Feb  2 08:25:45 EST 2020
+// Deprecated Sun Feb  2 08:25:45 EST 2020
 void CModel::CenterCell(void)
 {
     if(!IsCentered())
@@ -682,7 +682,7 @@ void CModel::UpdateBondPositions(void){
   }
 }
 
-// deprecated Sat Feb  1 12:01:07 EST 2020
+// Deprecated Sat Feb  1 12:01:07 EST 2020
 void CModel::CenterView(void)
 {
 #ifdef _DEBUG_MODEL_DATA_
